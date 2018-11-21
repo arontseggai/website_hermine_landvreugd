@@ -1,0 +1,31 @@
+{
+  "name": "papimikeydinero",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "arontseggai <aron.tseggai@gmail.com>",
+  "private": true,
+  "scripts": {
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "dev": "NODE_ENV=DEV nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "NODE_ENV=PRODUCTION nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "nuxt": "npm:nuxt-edge",
+    "vue-youtube-embed": "^2.2.1"
+  },
+  "devDependencies": {
+    "@vimeo/player": "^2.6.1",
+    "babel-eslint": "^8.2.1",
+    "babel-preset-env": "^1.7.0",
+    "bulma": "^0.7.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "push-dir": "^0.4.1"
+  }
+}

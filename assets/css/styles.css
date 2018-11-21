@@ -1,0 +1,142 @@
+.columns {
+	margin: 0 !important;
+}
+
+@media only screen and (max-width: 1215px) {
+  iframe { width: 800px; }
+  .youtube-video iframe {
+    height: 450px;
+  }
+  #player { width: 800px; }
+}
+
+@media only screen and (max-width: 1023px) {
+  iframe { width: 600px; }
+  .youtube-video iframe {
+    height: 337px;
+  }
+  #player { width: 600px; }
+    .padding-sides {
+    padding: 0px 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  iframe { width: 400px; }
+  .youtube-video iframe {
+    height: 225px;
+  }
+  #player { width: 400px; }
+  .padding-sides {
+    padding: 0px 10px;
+  }
+  .left {
+    margin-bottom: 0px !important;
+  }
+  .sub-content-block {
+    text-align: left !important;
+  }
+  .details-list {
+    justify-content: left !important;
+  }
+  .socials-list {
+    padding: 0px !important;
+  }
+  h1 {
+    font-size: 38px !important;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  iframe { width: 300px; }
+  .youtube-video iframe {
+    height: 169px;
+  }
+  #player { width: 300px; }
+  .padding-sides {
+    padding: 0px 10px;
+  }
+}
+
+@media only screen and (min-width: 1216px) {
+  #about .inner-container {
+    padding-right: 280px;
+  }
+}
+
+html {
+  background-color: #FECB2F;
+}
+
+body {
+  background-color: #000000;
+}
+
+.title {
+  font-size: 24px;
+  font-family: serif;
+  color: #FECB2F;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: serif;
+}
+h3 {
+  font-family: serif;
+  font-size: 32px;
+}
+h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p, a {
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 18px;
+  /* font-style: oblique; */
+  font-variant: normal;
+  line-height: 20px;
+  color: #FECB2F;
+}
+a {
+  border-bottom: 1px solid transparent;
+}
+a:hover {
+  color: #FECB2F;
+  border-bottom: 1px solid #FECB2F;;
+}
+.padded-b-10 {
+  margin-bottom: 8px !important;
+}
+
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-top: 2px solid #FECB2F;
+}
+
+
+.text-right {
+  text-align: right;
+}
+
+#bottom-footer .outer-container {
+  display: flex;
+  justify-content: center;
+  /*  padding: 25px 0px;*/
+  z-index: 999;
+  width: 100%;
+}
+
+.sub-container {
+  padding: 80px 0px;
+}
+.content-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
