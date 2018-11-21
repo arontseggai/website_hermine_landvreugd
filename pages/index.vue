@@ -2,29 +2,16 @@
   <div>
     <div class="container">
 
-      <section id="header">
-        <HeaderComponent :image="'pmd.png'"></HeaderComponent>
+      <section id="projects-images">
+        <ImagesProjectsComponent></ImagesProjectsComponent>
       </section>
 
-
-      <section id="about">
-        <AboutComponent></AboutComponent>
-      </section>
-
-      <section id="header">
-        <HeaderComponent :image="'single_gucci_loafers.png'"></HeaderComponent>
-      </section>
-
-
-      <section id="header">
-        <HeaderComponent :image="'mike_single_cover_compressed.png'"></HeaderComponent>
-      </section>
-
-      <section id="projects">
-        <ProjectsComponent></ProjectsComponent>
+      <section id="projects-videos">
+        <VideosProjectsComponent></VideosProjectsComponent>
       </section>
 
       <!-- <hr> -->
+
       <section id="socials">
         <SocialsComponent></SocialsComponent>
       </section>
@@ -32,24 +19,27 @@
       <section id="footer">
         <FooterComponent></FooterComponent>
       </section>
-  </div>
-      <section id="bottom-footer">
-          <BottomFooterComponent></BottomFooterComponent>
-      </section>
+
+    </div>
+    <section id="bottom-footer">
+      <BottomFooterComponent></BottomFooterComponent>
+    </section>
   </div>
 </template>
 
 <script>
-  import ProjectsComponent from '~/components/ProjectsComponent.vue'
+  import VideosProjectsComponent from '~/components/videos_components/ProjectsComponent.vue'
+  import ImagesProjectsComponent from '~/components/images_components/ProjectsComponent.vue'
+
   import FooterComponent from '~/components/FooterComponent.vue'
   import SocialsComponent from '~/components/SocialsComponent.vue'
   import BottomFooterComponent from '~/components/BottomFooterComponent.vue'
   import AboutComponent from '~/components/AboutComponent.vue'
   import HeaderComponent from '~/components/HeaderComponent.vue'
-
   export default {
     components: {
-      ProjectsComponent,
+      VideosProjectsComponent,
+      ImagesProjectsComponent,
       FooterComponent,
       SocialsComponent,
       BottomFooterComponent,
@@ -60,4 +50,5 @@
 </script>
 
 <style>
+
 </style>

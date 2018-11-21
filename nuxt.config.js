@@ -21,8 +21,8 @@ module.exports = {
       { rel: 'icon', type: 'image/png', size: '72x72', href: '/apple-icon-72x72.png' },
       { rel: 'icon', type: 'image/png', size: '76x76', href: '/apple-icon-76x76.png' },
       { rel: 'icon', type: 'image/png', size: '120x120', href: '/apple-icon-120x120.png' },
-      { rel: 'icon', type: 'image/png', size: '120x120', href: '/apple-icon-120x120.png' },    
-      { rel: 'icon', type: 'image/png', size: '144x144', href: '/apple-icon-144x144.png' },    
+      { rel: 'icon', type: 'image/png', size: '120x120', href: '/apple-icon-120x120.png' },
+      { rel: 'icon', type: 'image/png', size: '144x144', href: '/apple-icon-144x144.png' },
       { rel: 'icon', type: 'image/png', size: '152x152', href: '/apple-icon-152x152.png' },
       { rel: 'icon', type: 'image/png', size: '180x180', href: '/apple-icon-180x180.png' },
       { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/android-icon-192x192.png' },
@@ -34,8 +34,9 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   env: {
-    googleSheetId: '1QZSlrDz6uievtRcxZ3ZArfeSTWVzgZXScs-TzFHZE-s',
-    googleApiKey: 'AIzaSyAobr7V2p7-68nRO7T_XXC-7OYnH12McMc',
+    googleSheetIdImages: '1IR0mZSCXArgoDi6DuxkxDqZmJ0V2Vw5PrZ-lHL_jjZU',
+    googleSheetIdVideos: '1gI8E0UuvyIb6Vjn_kt0UTxU8AwsO3X1B7thqAtG4fAU',
+    googleApiKey: 'AIzaSyCmc7r5WgOq45BqG6Cim7TmEfoR8kM3zo8',
   },
   plugins: [
     '~/plugins/youtube'
@@ -48,7 +49,7 @@ module.exports = {
     "~/assets/css/styles.css"
   ],
   // router: { base: '/papimikeydinero/' },
-  router: { 
+  router: {
     ...(process.env.NODE_ENV !== 'PRODUCTION' ? {base: ''} : {base: ''})
    },
   /*
