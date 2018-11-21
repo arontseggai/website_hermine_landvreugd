@@ -39,7 +39,7 @@
       },
       callGoogleDriveSheet(){
         let that = this
-        const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.googleSheetIdVideos}/values/a2:b?key=${process.env.googleApiKey}`
+        const url = `https://sheets.googleapis.com/v4/spreadsheets/${process.env.googleSheetIdVideos}/values/a2:a?key=${process.env.googleApiKey}`
         fetch(url)
         .then(function(response){
           return response.json();
@@ -47,8 +47,6 @@
         .then(function(response) {
           let projects_array = response.values;
           let array = []
-
-          console.log(projects_array)
 
           projects_array.forEach( function ( value, i ) {
             let videoHost = that.checkVideoHost(value[0]);
@@ -64,7 +62,6 @@
               photo: thumbnail ? thumbnail : null,
               videoHost: videoHost,
             }
-            console.log(project);
             array.push(project);
           });
           that.projects = array

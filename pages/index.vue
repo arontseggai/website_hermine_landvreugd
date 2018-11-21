@@ -12,13 +12,13 @@
 
       <!-- <hr> -->
 
-      <section id="socials">
+      <!-- <section id="socials">
         <SocialsComponent></SocialsComponent>
-      </section>
+      </section> -->
 
-      <section id="footer">
+      <!-- <section id="footer">
         <FooterComponent></FooterComponent>
-      </section>
+      </section> -->
 
     </div>
     <section id="bottom-footer">
