@@ -2,13 +2,13 @@
   <div>
     <div class="container">
 
-      <section id="projects-images">
+      <!-- <section id="projects-images">
         <ImagesProjectsComponent></ImagesProjectsComponent>
       </section>
 
       <section id="projects-videos">
         <VideosProjectsComponent></VideosProjectsComponent>
-      </section>
+      </section> -->
 
       <!-- <hr> -->
 
