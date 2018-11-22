@@ -33,15 +33,12 @@
           let projects_array = response.values;
           let array = []
 
-          console.log(projects_array)
-
           projects_array.forEach( function ( value, i ) {
             let project = {
               id: `project-image-${i}`,
               imageFront: value[0],
               imageBack: value[1]
             }
-            console.log(project);
             array.push(project);
           });
           that.projects = array
