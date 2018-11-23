@@ -36,10 +36,11 @@ module.exports = {
   env: {
     googleSheetIdImages: '1IR0mZSCXArgoDi6DuxkxDqZmJ0V2Vw5PrZ-lHL_jjZU',
     googleSheetIdVideos: '1gI8E0UuvyIb6Vjn_kt0UTxU8AwsO3X1B7thqAtG4fAU',
-    googleApiKey: 'AIzaSyCmc7r5WgOq45BqG6Cim7TmEfoR8kM3zo8',
+    googleApiKey: 'AIzaSyBrVyof1yBfSZqh16sf3FMuBptdbUmqnww',
   },
   plugins: [
-    '~/plugins/youtube'
+    '~/plugins/youtube',
+    '~/plugins/masonry'
   ],
   /*
   ** Add css
