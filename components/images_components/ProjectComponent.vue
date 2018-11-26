@@ -1,69 +1,52 @@
 <template>
-  <div class="column is-4 centered">
-    <div class="flip-container" @click="isFlipped = !isFlipped ">
-      <div class="flipper" :class="{ flipped: isFlipped }">
-        <div class="front">
-          <img :src="imageFront" alt="">
-        </div>
-        <div class="back">
-          <img :src="imageBack" alt="">
-        </div>
+  <div @keydown.esc="deactiveOverlay">
+    <div class="front-image" @click="activateOverlay"><img :src="imageFront" alt=""></div>
+    <div class="overlay" :class="{active: isActive}">
+      <img class="close" src="~/static/cross.svg" alt="" @click="deactiveOverlay">
+      <div class="imagery">
+        <img :src="imageBack" alt="">
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-  .centered {
-    display: flex;
-    justify-content: center;
-  }
-  /* entire container, keeps perspective */
-  .flip-container {
+  .front-image img {
     cursor: pointer;
-    perspective: 1000px;
   }
-  /* flip the pane when hovered
-  .flip-container:hover .flipper,
-  .flip-container.hover .flipper {
-    transform: rotateY(180deg);
-  } */
-
-  /* flip the pane when hovered */
-
-  .flipped {
-    transform: rotateY(180deg);
+  .overlay {
+    display: none;
   }
-
-  .flip-container,
-  .front,
-  .back {
-    width: 400px;
-    height: 600px;
-  }
-  /* flip speed goes here */
-  .flipper {
-    transition: 0.6s;
-    transform-style: preserve-3d;
-    position: relative;
-  }
-  /* hide back of pane during swap */
-  .front,
-  .back {
-    backface-visibility: hidden;
-    position: absolute;
+  .overlay.active {
+    position: fixed;
+    min-height: 100%;
+    z-index: 998;
+    width: 100%;
     top: 0;
     left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  /* front pane, placed above back */
-  .front {
-    z-index: 2;
-    /* for firefox 31 */
-    transform: rotateY(0deg);
+  .overlay.active .imagery img {
+    height: 100%;
   }
-  /* back, initially hidden pane */
-  .back {
-    transform: rotateY(180deg);
+  .overlay.active .imagery {
+    height: 80vh;
+  }
+  .overlay .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 25px;
+    margin: 7% 10% 0px 0px;
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+  }
+  .overlay.active .close {
+    display: block;
   }
 </style>
 
@@ -71,7 +54,7 @@
   export default {
     data() {
       return {
-        isFlipped: false
+        isActive: false
       }
     },
     props: {
@@ -87,6 +70,23 @@
         type: String,
         required: true
       }
+    },
+    methods: {
+      activateOverlay() {
+        console.log('wefwefwefewf');
+        this.isActive = true
+      },
+      deactiveOverlay() {
+        this.isActive = false
+      },
+      deactiveOverlayEscape(e) {
+        if (e.keyCode === 27 && this.isActive) {
+          this.isActive = false;
+        }
+      }
+    },
+    created() {
+      window.addEventListener('keyup', this.deactiveOverlayEscape);
     }
   }
 </script>

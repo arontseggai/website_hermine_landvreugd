@@ -1,9 +1,15 @@
 <template>
   <div class="container">
-    <masonry :cols="3" :gutter="20">
-      <div v-for="project in projects" :key="project.id">
-        <img :src="project.imageFront" alt="">
-      </div>
+    <masonry
+      :cols="{default: 3, 1000: 3, 700: 2, 400: 1}"
+      :gutter="{default: '30px', 700: '15px'}">
+      <div><h1>Hermine Landvreugd</h1></div>
+      <project-component
+        v-for="project in projects"
+        :key="project.id"
+        :id="project.id"
+        :imageFront="project.imageFront"
+        :imageBack="project.imageBack"></project-component>
     </masonry>
   </div>
 </template>
@@ -16,6 +22,7 @@
 
 <script>
   import ProjectComponent from './ProjectComponent.vue'
+
   export default {
     components: {
       ProjectComponent
