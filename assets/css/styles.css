@@ -65,12 +65,18 @@
 }
 
 html {
-  background-color: #222725;
+  background-color: #494850;
 }
 
 body {
-  background-color: #222725;
+  background-color: #494850;
 }
+
+
+potential-colors {
+  color: #494850;
+}
+
 
 .title {
   font-size: 24px;

@@ -13,6 +13,10 @@
 <style scoped>
   .front-image img {
     cursor: pointer;
+    -webkit-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
+    -moz-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
+    box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
+    margin-bottom: 15px;
   }
   .overlay {
     display: none;
