@@ -3,7 +3,7 @@
     <masonry
       :cols="{default: 3, 1000: 3, 700: 2, 400: 1}"
       :gutter="{default: '30px', 700: '15px'}">
-      <div><h1>Hermine Landvreugd</h1></div>
+      <div class="author-block"><h1>Hermine Landvreugd</h1></div>
       <project-component
         v-for="project in projects"
         :key="project.id"
@@ -15,6 +15,23 @@
 </template>
 
 <style>
+  .author-block {
+
+    -webkit-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
+    -moz-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
+    box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
+    margin-bottom: 20px;
+    /* border: 1px solid #2c2b2f; */
+    padding: 15px 0px;
+  }
+
+  .author-block h1 {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+  }
+
   .container {
     margin-top: 60px;
   }
