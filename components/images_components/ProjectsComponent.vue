@@ -3,7 +3,10 @@
     <masonry
       :cols="{default: 3, 1000: 3, 700: 2, 400: 1}"
       :gutter="{default: '30px', 700: '15px'}">
-      <div class="author-block"><h1>Hermine Landvreugd</h1></div>
+      <div class="author-block">
+        <h1>Hermine Landvreugd</h1>
+        <h3>Kinderboeken</h3>
+      </div>
       <project-component
         v-for="project in projects"
         :key="project.id"
@@ -17,19 +20,38 @@
 <style>
   .author-block {
 
-    -webkit-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
+    /* -webkit-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
     -moz-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
-    box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
+    box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69); */
+
+    -webkit-box-shadow: 9px 10px 18px -1px rgba(0,0,0,0.65);
+    -moz-box-shadow: 9px 10px 18px -1px rgba(0,0,0,0.65);
+    box-shadow: 9px 10px 18px -1px rgba(0,0,0,0.65);
+
+    background-color:   rgba(245, 245, 245, 0.42);
+
     margin-bottom: 20px;
     /* border: 1px solid #2c2b2f; */
-    padding: 15px 0px;
+    padding: 40px 0;
+    text-align: center;
   }
 
   .author-block h1 {
-    color: black;
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .author-block h3 {
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 2px;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 300;
   }
 
   .container {

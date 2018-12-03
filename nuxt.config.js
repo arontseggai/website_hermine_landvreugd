@@ -27,7 +27,7 @@ module.exports = {
       { rel: 'icon', type: 'image/png', size: '180x180', href: '/apple-icon-180x180.png' },
       { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/android-icon-192x192.png' },
       { rel: 'manifest', href: '/manifest.json' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Permanent+Marker'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700'}
     ]
   },
   /*
