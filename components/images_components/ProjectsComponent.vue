@@ -34,6 +34,10 @@
     /* border: 1px solid #2c2b2f; */
     padding: 40px 0;
     text-align: center;
+    border-right: #3d3d3d 5px solid;
+    border-bottom: #282828 5px solid;
+    border-top: #a0a0a0 5px solid;
+    border-left: #999999 5px solid;
   }
 
   .author-block h1 {
