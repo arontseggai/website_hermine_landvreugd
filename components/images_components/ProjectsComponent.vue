@@ -3,7 +3,7 @@
     <masonry
       :cols="{default: 3, 1000: 3, 700: 2, 400: 1}"
       :gutter="{default: '30px', 700: '15px'}">
-      <div class="author-block">
+      <div class="author-block box-shadow">
         <h1>Hermine Landvreugd</h1>
         <h3>Kinderboeken</h3>
       </div>
@@ -18,26 +18,16 @@
 </template>
 
 <style>
+
   .author-block {
-
-    /* -webkit-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
-    -moz-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
-    box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69); */
-
-    -webkit-box-shadow: 9px 10px 18px -1px rgba(0,0,0,0.65);
-    -moz-box-shadow: 9px 10px 18px -1px rgba(0,0,0,0.65);
-    box-shadow: 9px 10px 18px -1px rgba(0,0,0,0.65);
-
-    background-color:   rgba(245, 245, 245, 0.42);
-
     margin-bottom: 20px;
     /* border: 1px solid #2c2b2f; */
     padding: 40px 0;
     text-align: center;
-    border-right: #3d3d3d 5px solid;
-    border-bottom: #282828 5px solid;
-    border-top: #a0a0a0 5px solid;
-    border-left: #999999 5px solid;
+    background-color: #494850;
+    border-color: #5a5960 #3d3d3d #282828 #535258;
+    border-style: solid;
+    border-width: 5px;
   }
 
   .author-block h1 {

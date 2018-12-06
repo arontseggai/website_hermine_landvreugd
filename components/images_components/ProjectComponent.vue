@@ -1,6 +1,6 @@
 <template>
   <div @keydown.esc="deactiveOverlay">
-    <div class="front-image" @click="activateOverlay"><img :src="imageFront" alt=""></div>
+    <div class="front-image" @click="activateOverlay"><img class="box-shadow" :src="imageFront" alt=""></div>
     <div class="overlay" :class="{active: isActive}">
       <img class="close" src="~/static/cross.svg" alt="" @click="deactiveOverlay">
       <div class="imagery">
@@ -13,13 +13,6 @@
 <style scoped>
   .front-image img {
     cursor: pointer;
-    /* -webkit-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
-    -moz-box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69);
-    box-shadow: 3px 5px 10px 1px rgba(51, 51, 51, 0.69); */
-
-    -webkit-box-shadow: 9px 10px 18px -1px rgba(0, 0, 0, 0.51);
-    -moz-box-shadow: 9px 10px 18px -1px rgba(0, 0, 0, 0.51);
-    box-shadow: 9px 10px 18px -1px rgba(0, 0, 0, 0.51);
     margin-bottom: 15px;
   }
 
