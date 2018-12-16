@@ -16,9 +16,9 @@
         <SocialsComponent></SocialsComponent>
       </section> -->
 
-      <!-- <section id="footer">
+      <section id="footer">
         <FooterComponent></FooterComponent>
-      </section> -->
+      </section>
 
     </div>
     <section id="bottom-footer">
