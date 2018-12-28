@@ -35,7 +35,6 @@
   import SocialsComponent from '~/components/SocialsComponent.vue'
   import BottomFooterComponent from '~/components/BottomFooterComponent.vue'
   import AboutComponent from '~/components/AboutComponent.vue'
-  import HeaderComponent from '~/components/HeaderComponent.vue'
   export default {
     components: {
       VideosProjectsComponent,
@@ -43,8 +42,7 @@
       FooterComponent,
       SocialsComponent,
       BottomFooterComponent,
-      AboutComponent,
-      HeaderComponent
+      AboutComponent
     }
   }
 </script>

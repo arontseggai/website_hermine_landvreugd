@@ -20,32 +20,33 @@
 <style>
 
   .author-block {
-    margin-bottom: 20px;
-    /* border: 1px solid #2c2b2f; */
     padding: 40px 0;
     text-align: center;
     background-color: #494850;
     border-color: #5a5960 #3d3d3d #282828 #535258;
     border-style: solid;
     border-width: 5px;
+    margin-bottom: 40px;
   }
 
   .author-block h1 {
-    color: rgba(0, 0, 0, 0.87);
+    color: rgba(130, 130, 130, 0.87);
     font-size: 22px;
     text-transform: uppercase;
     margin: 0 0 10px 0;
     font-weight: 400;
     letter-spacing: 1px;
+    text-shadow: 1px 1px #242424;
   }
 
   .author-block h3 {
-    color: rgba(0, 0, 0, 0.87);
+    color: rgba(130, 130, 130, 0.87);
     margin-top: 2px;
     font-size: 20px;
     margin: 0;
     margin-bottom: 15px;
     font-weight: 300;
+    text-shadow: 1px 1px #242424;
   }
 
   .container {

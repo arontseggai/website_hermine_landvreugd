@@ -1,6 +1,6 @@
 <template>
   <div @keydown.esc="deactiveOverlay">
-    <div class="front-image" @click="activateOverlay"><img class="box-shadow" :src="imageFront" alt=""></div>
+    <div class="front-image" @click="activateOverlay"><img class="grow box-shadow" :src="imageFront" alt=""></div>
     <div class="overlay" :class="{active: isActive}">
       <img class="close" src="~/static/cross.svg" alt="" @click="deactiveOverlay">
       <div class="imagery">
@@ -11,9 +11,21 @@
 </template>
 
 <style scoped>
+    .grow {
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      transition: 0.2s ease-in-out;
+  }
+
+  .grow:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 14px 22px -1px rgba(0,0,0,0.65);
+  }
+
+
   .front-image img {
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
 
   .front-image img:hover {
