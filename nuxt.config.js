@@ -27,7 +27,8 @@ module.exports = {
       { rel: 'icon', type: 'image/png', size: '180x180', href: '/apple-icon-180x180.png' },
       { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/android-icon-192x192.png' },
       { rel: 'manifest', href: '/manifest.json' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,700'},
+      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.6.3/css/all.css', integrity:'sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/', crossorigin:'anonymous'}
     ]
   },
   /*

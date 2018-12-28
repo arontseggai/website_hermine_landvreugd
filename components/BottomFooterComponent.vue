@@ -9,7 +9,8 @@
         padding: 5px 0px;
     }
     .credits {
-        color: #FECB2F;
-        font-size: 7px;
+        color: #757575;
+        font-size: 10px;
+        text-shadow: 1px 1px #242424;
     }
 </style>
