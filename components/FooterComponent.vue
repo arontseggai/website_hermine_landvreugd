@@ -19,7 +19,7 @@
     </div>
     <div class="column is-two-fifths">
       <h2>Stel een vraag</h2>
-      <form method="POST" action="https://formspree.io/aefewfew.com">
+      <form method="POST" action="https://formspree.io/hd.joy@hotmail.com">
         <input type="email" name="email" placeholder="Jouw e-mailadres">
         <input name="phonenumber" placeholder="Jouw telefoonnummer"></input>
         <textarea name="message" placeholder="Jouw boodschap" rows="4"></textarea>

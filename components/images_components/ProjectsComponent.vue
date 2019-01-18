@@ -30,17 +30,20 @@
   }
 
   .author-block h1 {
-    color: rgba(130, 130, 130, 0.87);
+    font-family: "Helvetica Neue", Helvetica;
+    color: #FFF987;
+    text-shadow: 1px 1px #0b0b00;
     font-size: 22px;
     text-transform: uppercase;
     margin: 0 0 10px 0;
     font-weight: 400;
     letter-spacing: 1px;
-    text-shadow: 1px 1px #242424;
   }
 
   .author-block h3 {
-    color: rgba(130, 130, 130, 0.87);
+    font-family: "Helvetica Neue", Helvetica;
+    color: #FFF987;
+    text-shadow: 1px 1px #0b0b00;
     margin-top: 2px;
     font-size: 20px;
     margin: 0;

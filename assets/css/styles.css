@@ -43,7 +43,7 @@
     padding: 0px !important;
   }
   h1 {
-    font-size: 38px !important;
+    font-size: 22px !important;
   }
 }
 
@@ -102,12 +102,11 @@ p, a {
   color: #FECB2F;
 }
 
-
 h2,
 p,
 i {
-  color: #757575;
-  text-shadow: 1px 1px #242424;
+  color: #FFF987;
+  text-shadow: 1px 1px #0b0b00;
 }
 
 p {
@@ -123,13 +122,14 @@ i {
 }
 
 h2 {
-  color: #757575;
-  font-weight: 400;
+  color: #FFF987;
+  text-shadow: 1px 1px #0b0b00;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 300;
   font-size: 22px;
   letter-spacing: 1px;
   margin-left: 20px;
 }
-
 
 #bottom-footer .outer-container {
   display: flex;
@@ -163,7 +163,6 @@ h2 {
 .grow:hover {
   transform: scale(1.05);
 }
-
 
 .grow-shadow:hover {
   box-shadow: 4px 14px 22px -1px rgba(0,0,0,0.65);
