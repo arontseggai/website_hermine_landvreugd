@@ -3,6 +3,7 @@
     <div class="imagery" @click="activateOverlay">
       <img :src="photo" alt="">
       <div class="img-overlay is-hidden-mobile"></div>
+      <i class="far fa-play-circle"></i>
     </div>
     <div
       class="overlay"
@@ -64,6 +65,16 @@
   }
   .imagery img {
     width: 100%;
+  }
+  .imagery i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 32px;
+    color: #fff;
+    opacity: 0.8;
+    text-shadow: none;
   }
   .overlay.active {
     position: fixed;
