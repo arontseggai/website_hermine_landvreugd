@@ -3,7 +3,7 @@
     <masonry
       :cols="{default: 3, 1000: 3, 700: 2, 400: 1}"
       :gutter="{default: '30px', 700: '15px'}">
-      <div class="author-block box-shadow">
+      <div class="author-block box-shadow mobile-margin">
         <h1>Hermine Landvreugd</h1>
         <h3>Kinderboeken</h3>
       </div>
@@ -18,6 +18,12 @@
 </template>
 
 <style>
+
+@media screen and (max-width: 400px) {
+  .mobile-margin {
+    margin: 0.75rem;
+  }
+}
 
   .author-block {
     padding: 40px 0;

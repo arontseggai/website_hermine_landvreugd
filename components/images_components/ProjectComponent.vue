@@ -1,6 +1,6 @@
 <template>
   <div @keydown.esc="deactiveOverlay">
-    <div class="front-image" @click="activateOverlay"><img class="grow grow-shadow box-shadow" :src="imageFront" alt=""></div>
+    <div class="front-image mobile-margin" @click="activateOverlay"><img class="grow grow-shadow box-shadow" :src="imageFront" alt=""></div>
     <div class="overlay" :class="{active: isActive}">
       <img class="close" src="~/static/cross.svg" alt="" @click="deactiveOverlay">
       <div class="imagery">
@@ -11,7 +11,6 @@
 </template>
 
 <style scoped>
-
   .front-image img {
     cursor: pointer;
     margin-bottom: 40px;
