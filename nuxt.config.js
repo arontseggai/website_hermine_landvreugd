@@ -3,14 +3,18 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'HERMINE LANDVREUGD',
+    title: 'Hermine Landvreugd, kinderboeken',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'msapplication-TileColor', content: '#ffffff' },
-      { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' },
-      { name: 'theme-color', content: '#ffffff' }
+      { name: 'description', content: 'Dit is de website van Hermine Landvreugd. Zij is een schrijfster van kinderboeken uit Amsterdam Noord.' },
+      { name: 'keywords', content: 'hermine, landvreugd, kinderboeken, kalle, amsterdam, noord, harmonie, killercactus, varken, boek, boeken, shamrock, willem, weerwolf, vpro, cinekid, monster, kinderboek' },
+      { name: 'author', content: 'aron tseggai'},
+      { name: 'robots', content: 'index, follow'},
+      { name: 'revisit-after', content: '3 month'},
+      { name: 'msapplication-TileColor', content: '#F8AC2A' },
+      { name: 'msapplication-TileImage', content: '/ms-icon-310x310.png' },
+      { name: 'theme-color', content: '#F8AC2A' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', size: '32x32', href: '/favicon-32x32.png' },
