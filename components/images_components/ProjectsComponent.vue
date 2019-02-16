@@ -5,8 +5,10 @@
       :gutter="{default: '30px', 700: '15px'}">
       <div class="author-block box-shadow mobile-margin">
         <h1>Hermine Landvreugd</h1>
-        <h3>Kinderboeken</h3>
-      </div>
+        <h2>Kinderboeken</h2>
+        <hr>
+        <h3>Hermine Landvreugd publiceerde sinds haar debuut (Het zilveren theeëi, 1993) diverse verhalenbundels en kinderboeken, waarvan Willem is een weerwolf (Vlag en Wimpel 2001) misschien wel de bekendste is.<br>De VPRO baseerde er de jeugdserie Ik ben Willem op, die bekroond werd met de Cinekid Kinderkastprijs.</h3>
+      </div>    
       <project-component
         v-for="project in projects"
         :key="project.id"
@@ -26,7 +28,7 @@
 }
 
   .author-block {
-    padding: 40px 0;
+    padding: 40px 20px;
     text-align: center;
     background-color: #494850;
     border-color: #5a5960 #3d3d3d #282828 #535258;
@@ -46,16 +48,34 @@
     letter-spacing: 1px;
   }
 
+  .author-block h2 {
+    font-family: "Helvetica Neue", Helvetica;
+    color: #FFF987;
+    text-shadow: 1px 1px #0b0b00;
+    margin-top: 2px;
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 300;
+    text-shadow: 1px 1px #242424;
+  }
+
   .author-block h3 {
     font-family: "Helvetica Neue", Helvetica;
     color: #FFF987;
     text-shadow: 1px 1px #0b0b00;
     margin-top: 2px;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     margin-bottom: 15px;
     font-weight: 300;
-    text-shadow: 1px 1px #242424;
+    text-shadow: 1px 1px #;
+    text-align: left;
+  }
+
+  hr {
+    background-color: #232323 !important;
+    height: 1px;
   }
 
   .container {
