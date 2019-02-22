@@ -48,6 +48,13 @@ module.exports = {
     '~/plugins/youtube',
     '~/plugins/masonry'
   ],
+  modules: [
+    '@nuxtjs/sitemap'
+   ],  
+  sitemap: {
+    generate: true,
+    hostname: 'https://www.herminelandvreugd.nl'
+  },  
   /*
   ** Add css
   */
