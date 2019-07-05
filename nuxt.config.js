@@ -59,7 +59,7 @@ module.exports = {
   ** Add css
   */
   css: [
-    'bulma/css/bulma.css',
+    "~/assets/css/bulma.css",
     "~/assets/css/styles.css"
   ],
   // router: { base: '/papimikeydinero/' },

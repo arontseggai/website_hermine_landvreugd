@@ -76,6 +76,9 @@
     opacity: 0.8;
     text-shadow: none;
   }
+  .overlay {
+    display: none;
+  }
   .overlay.active {
     position: fixed;
     min-height: 100%;
